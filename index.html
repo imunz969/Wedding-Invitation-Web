@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Mika & Alvin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <section id="page1" class="page active bg-hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <p class="arabic-glow">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+                <h1 class="names-glow">Mika x Alvin</h1>
+                <div class="hero-text">
+                    <p class="slogan-lg">a promise made in faith</p>
+                    <p class="date-lg">21 . 08 . 2026</p>
+                </div>
+                <button class="btn-mega-pulse" onclick="movePage('page2', 'up')">
+                    <div class="play-triangle"></div>
+                </button>
+            </div>
+        </section>
+
+        <section id="page2" class="page bg-mempelai">
+            <div class="overlay"></div>
+            <button class="side-control next" onclick="movePage('page3', 'right')">❯</button>
+            <div class="profile-box-fixed">
+                <div class="photo-side"><div class="frame-img tilt-L"><img src="Alvin.png" alt="Alvin"></div></div>
+                <div class="text-side align-left">
+                    <h1 class="name-header">Alvin</h1>
+                    <div class="gold-line"></div>
+                    <p class="desc-para">Alvin adalah seorang anak tunggal dari keluarga yang sederhana. Dia dikenal sebagai anak baik dan sangat rajin di lingkungannya.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="page3" class="page bg-mempelai">
+            <div class="overlay"></div>
+            <button class="side-control prev" onclick="movePage('page2', 'left')">❮</button>
+            <button class="side-control next" onclick="movePage('page4', 'right')">❯</button>
+            <div class="profile-box-fixed reverse">
+                <div class="photo-side"><div class="frame-img tilt-R"><img src="Mika.png" alt="Mika"></div></div>
+                <div class="text-side align-right">
+                    <h1 class="name-header">Mika</h1>
+                    <div class="gold-line-right"></div>
+                    <p class="desc-para">Mika adalah seorang anak bungsu dari keluarga yang berada. Namun ia tetap rendah hati dan sangat baik hati kepada sesama.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="page4" class="page bg-duo">
+            <div class="overlay"></div>
+            <button class="side-control prev" onclick="movePage('page3', 'left')">❮</button>
+            <button class="side-control next" onclick="movePage('page5', 'right')">❯</button>
+            <div class="profile-box-fixed">
+                <div class="photo-side"><div class="circle-img-wrap"><img src="Mika x Alvin.png" alt="First Met"></div></div>
+                <div class="text-side align-left">
+                    <h1 class="name-header">First Met</h1>
+                    <div class="gold-line"></div>
+                    <p class="desc-para">Mereka bertemu pertama kali di sebuah kafe di sore hari. Di sana, Alvin langsung jatuh cinta pada pandangan pertama hingga akhirnya Alvin menyatakan keseriusan perasaannya.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="page5" class="page bg-event">
+            <div class="overlay"></div>
+            <button class="side-control prev" onclick="movePage('page4', 'left')">❮</button>
+            <button class="side-control next" onclick="movePage('page6', 'right')">❯</button>
+            <div class="event-container-fixed">
+                <h1 class="event-main-title">Wedding Event</h1>
+                <div class="event-grid">
+                    <div class="event-card-premium">
+                        <div class="card-top">
+                            <div class="ev-icon">💍</div>
+                            <h2>Akad Nikah</h2>
+                            <p class="ev-time">08.00 - 10.00 WIB</p>
+                            <p class="ev-date">Minggu, 21 Agustus 2026</p>
+                            <p class="ev-loc">Hutan Jati Cafe & Resto, Bekasi</p>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="dc-box">
+                                <p class="dc-label">DRESS CODE</p>
+                                <p class="dc-detail">Busana Muslim / Maroon Theme</p>
+                            </div>
+                            <button class="btn-push red" onclick="openMapsApp('Hutan Jati Cafe & Resto, Bekasi')">
+                                <span class="btn-push-inner">Google Maps</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="event-card-premium">
+                        <div class="card-top">
+                            <div class="ev-icon">🥂</div>
+                            <h2>Resepsi</h2>
+                            <p class="ev-time">11.00 - Selesai</p>
+                            <p class="ev-date">Minggu, 21 Agustus 2026</p>
+                            <p class="ev-loc">Harris Convention Center Summarecon</p>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="dc-box">
+                                <p class="dc-label">DRESS CODE</p>
+                                <p class="dc-detail">Batik / Formal Elegant</p>
+                            </div>
+                            <button class="btn-push red" onclick="openMapsApp('Harris Convention Center Summarecon Bekasi')">
+                                <span class="btn-push-inner">Google Maps</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page6" class="page bg-duo">
+            <div class="overlay"></div>
+            <button class="side-control prev" onclick="movePage('page5', 'left')">❮</button>
+            <div class="p6-container-raksasa">
+                <div class="p6-grid">
+                    <div class="rsvp-card">
+                        <h2 class="p6-title">RSVP</h2>
+                        <p class="p6-subtext">Konfirmasi kehadiran Anda di bawah ini:</p>
+                        <form id="rsvpForm" class="p6-form" onsubmit="openPopup(event)">
+                            <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                            <div class="form-row">
+                                <select id="jumlah" onchange="toggleLainnya(this)" required>
+                                    <option value="" disabled selected>Jumlah Orang</option>
+                                    <option value="1">1 Orang</option>
+                                    <option value="2">2 Orang</option>
+                                    <option value="3">3 Orang</option>
+                                    <option value="4">4 Orang</option>
+                                    <option value="5">5 Orang</option>
+                                    <option value="1">6 Orang</option>
+                                    <option value="2">7 Orang</option>
+                                    <option value="3">8 Orang</option>
+                                    <option value="4">9 Orang</option>
+                                    <option value="5">10 Orang</option>
+                                    <option value="lainnya">Lainnya...</option>
+                                </select>
+                                <select id="status" required>
+                                    <option value="" disabled selected>Status</option>
+                                    <option value="Hadir">Hadir</option>
+                                    <option value="Berhalangan">Berhalangan</option>
+                                </select>
+                            </div>
+                            <input type="text" id="jumlah_lainnya" placeholder="Tulis jumlah orang spesifik" style="display:none;">
+                            
+                            <button type="submit" class="btn-push red">
+                                <span class="btn-push-inner">Kirim RSVP</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="game-card">
+                        <h2 class="p6-title">Kapan Nyusul?</h2>
+                        <p class="p6-subtext">Klik buat tau kapan lu nyusul!</p>
+                        <div class="gacha-box" id="gachaBox">
+                            <h3 id="gachaResult">?</h3>
+                        </div>
+                        <button class="btn-push red" onclick="startGacha()">
+                            <span class="btn-push-inner">KLIK!</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rsvpModal" class="modal-overlay">
+                <div class="modal-content">
+                    <button class="close-btn" onclick="closePopup()">×</button>
+                    <div class="modal-grid">
+                        <div class="modal-left">
+                            <h2 class="modal-title">A Little Note</h2>
+                            <p class="modal-text">Kehadiran serta doa restu Anda adalah kado terindah bagi kami. Mohon luangkan waktu sejenak untuk memberikan harapan terbaik.</p>
+                        </div>
+                        <div class="modal-right">
+                            <h2 class="modal-title">Make A Wish</h2>
+                            <textarea id="wishText" placeholder="Drop disini men temen..."></textarea>
+                            <button class="btn-push red" onclick="finalKirimWA()">
+                                <span class="btn-push-inner">Kirim Sekarang (WA)</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function movePage(targetId, direction) {
+            const current = document.querySelector('.page.active');
+            const target = document.getElementById(targetId);
+            if (!target || current === target) return;
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active', 'anim-up', 'anim-right', 'anim-left', 'exit-left', 'exit-right'));
+            if (direction === 'right') current.classList.add('exit-left');
+            else if (direction === 'left') current.classList.add('exit-right');
+            target.classList.add('active', 'anim-' + direction);
+        }
+
+        function openMapsApp(lokasi) {
+            window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(lokasi)}`, '_blank');
+        }
+
+        function toggleLainnya(select) {
+            document.getElementById('jumlah_lainnya').style.display = (select.value === 'lainnya') ? 'block' : 'none';
+        }
+
+        function startGacha() {
+            const res = document.getElementById('gachaResult');
+            const box = document.getElementById('gachaBox');
+            const options = ["Tahun Depan!", "Bulan Depan!", "Besok!", "Masih Lama!", "Emang Ada Jodohnya?!", "Nunggu Hilal", "Gak Ada Yang Mau", "Lu Jelek", "2 Tahun Lagi", "3 Tahun Lagi!", "4 Tahun Lagi!", "5 Bulan Lagi!", "Masih Lama Dek!", "Cari Dulu Tuh Duit!", "Gak Usah Mimpi!", "Udah Ada Restu Belom Dek", "Kapan Kapan", "7 Bulan Lagi"];
+            box.classList.add('shaking-blur');
+            res.classList.remove('pop-satisfy');
+            setTimeout(() => {
+                box.classList.remove('shaking-blur');
+                res.innerText = options[Math.floor(Math.random() * options.length)];
+                res.classList.add('pop-satisfy');
+            }, 600);
+        }
+
+        // POPUP LOGIC
+        function openPopup(e) {
+            e.preventDefault();
+            document.getElementById('rsvpModal').classList.add('show');
+        }
+
+        function closePopup() {
+            document.getElementById('rsvpModal').classList.remove('show');
+        }
+
+        function finalKirimWA() {
+            const nama = document.getElementById('nama').value;
+            const jumlah = document.getElementById('jumlah').value;
+            const status = document.getElementById('status').value;
+            const jmlLain = document.getElementById('jumlah_lainnya').value;
+            const wish = document.getElementById('wishText').value;
+            
+            const fixJumlah = (jumlah === 'lainnya') ? jmlLain : jumlah;
+            const noWA = "6281398004042"; 
+            const pesan = `Halo Mika %26 Alvin!%0A%0ASaya *${nama}* konfirmasi RSVP.%0AStatus: *${status}*%0AJumlah: *${fixJumlah} orang*.%0A%0A*Wish:* ${wish}`;
+            window.open(`https://api.whatsapp.com/send?phone=${noWA}&text=${pesan}`, '_blank');
+            closePopup();
+        }
+    </script>
+</body>
+</html>
